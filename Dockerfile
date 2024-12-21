@@ -22,4 +22,4 @@ COPY --from=build /usr/src/app/package.json ./package.json
 
 EXPOSE 3000
 
-CMD [ "node", "dist/main.js" ]
+CMD [ "npm", "run", "start:prod" ]
